@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{9bb81ab9-ee7c-4f60-9218-200002abb15d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osCode">
+      <UniqueIdentifier>{4d636c65-4a7a-48c7-8253-6757d57d6254}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\glad.c">
@@ -41,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="..\imgui_widgets.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fsGUI.cpp">
+      <Filter>GUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,8 +80,28 @@
     <ClInclude Include="..\imgui_impl_opengl3_loader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="tools.h">
+    <ClInclude Include="..\main.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\fsGUI.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\osCode\dir.h">
+      <Filter>osCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\osCode\phy_block.h">
+      <Filter>osCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\osCode\tools.h">
+      <Filter>osCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\osCode\block">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\fsGUI.cpp" />
     <ClCompile Include="..\glad.c" />
     <ClCompile Include="..\imgui.cpp" />
     <ClCompile Include="..\imgui_demo.cpp" />
@@ -30,6 +31,7 @@
     <ClCompile Include="..\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\fsGUI.h" />
     <ClInclude Include="..\imconfig.h" />
     <ClInclude Include="..\imgui.h" />
     <ClInclude Include="..\imgui_impl_glfw.h" />
@@ -39,7 +41,14 @@
     <ClInclude Include="..\imstb_rectpack.h" />
     <ClInclude Include="..\imstb_textedit.h" />
     <ClInclude Include="..\imstb_truetype.h" />
-    <ClInclude Include="tools.h" />
+    <ClInclude Include="..\main.h" />
+    <ClInclude Include="..\osCode\dir.h" />
+    <ClInclude Include="..\osCode\phy_block.h" />
+    <ClInclude Include="..\osCode\tools.h" />
+    <ClInclude Include="..\transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\osCode\block" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -95,8 +104,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\codeEnvironment\GLFW\glfw-3.3.2\include;D:\codeEnvironment\GLFW\glfw-3.3.2\include\stb;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\codeEnvironment\GLFW\glfw-3.3.2\src\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\codeEnvironment\openglfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\codeEnvironment\openglfw\lib\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -123,6 +132,9 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>os_design.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\document\codes_study\vs2019\FileSystem\osCode\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>os_design.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
