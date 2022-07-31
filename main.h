@@ -1,5 +1,8 @@
-#pragma comment (lib, "os_design.lib")
+//#pragma comment (lib, "os_design.lib")
 #pragma once
+#include <stdio.h>
+
+#include <GLFW/glfw3.h> // Will drag system OpenGL headers
 #include <string>
 #include <vector>
 #include <map>
