@@ -4,3 +4,4 @@
 - 使用GLFW与imgui制作交互界面
 ## 项目截图
 详见设计报告.pdf
+[设计报告](https://github.com/lanrenxl/FileSystem/blob/master/%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf)
